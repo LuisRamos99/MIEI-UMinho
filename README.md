@@ -9,7 +9,7 @@
 
  - [Base de dados NoSQL](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/BDNoSQL_TP) <br/>
  - [Comunicações por Computador](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/CC_TPS) <br/>
- - [Computação Gráfica](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/CG_TP) <br/>
+ - [Computação Gráfica](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/CG-TP) <br/>
  - [Desenvolvimento de Sistemas de Software](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/DSS_TP) <br/>
  - [Gramáticas na Compreensão de Software](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/GCS_TP) <br/>
  - [Laboratórios de Informática III](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/LI3) <br/>
