@@ -3,4 +3,4 @@
 </p>
 <h1 align="center">MIEI</h1>
 <h3 align="center">Universidade do Minho</h3>
-<p  align="center"> Alguns dos trabalhos práticos realizados nas unidades curriculares do Mestrado Integrado em Engenharia Informática (2017-2020) </p>
+<p  align="center"> Alguns dos trabalhos práticos realizados nas unidades curriculares do Mestrado Integrado em Engenharia Informática </p>
