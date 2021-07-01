@@ -1,0 +1,20 @@
+Ontologia
+
+conceitos{Aluno, Recurso de apredizagem, Conceito, Características}
+
+individuos{Número de aluno, Idade, Identificador do recurso, Tipo do recurso, Descrição, Idade ideal}
+
+relações{contém, ensina, iof, utiliza}
+
+triplos{
+	Número de aluno = iof => Aluno
+	Idade = iof => Aluno
+	Aluno = contém => Características
+	Identificador do recurso  = iof => Recurso de aprendizagem 
+	Tipo do recurso  = iof => Recurso de aprendizagem 
+	Descrição  = iof => Recurso de aprendizagem 
+	Idade ideal  = iof => Recurso de aprendizagem 
+	Recurso de aprendizagem = ensina => Conceitos
+	Recurso de aprendizagem = contém => Características
+	Aluno = utiliza => Recurso de aprendizagem
+}

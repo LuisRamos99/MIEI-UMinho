@@ -1,0 +1,156 @@
+<scene>
+  <camera>
+    <lookat x="0" y="0" z="0"/>
+    <radius value="20"/>
+    <sensitivity value="0.001f"/>
+  </camera>
+
+  <lights>
+    <light type="DIRECTIONAL" posZ="40" posY="1"/>
+  </lights>
+
+  <!--Floor-->
+  <group>
+    <models>
+      <model file="Plane.3d" diffR="1" diffG="1" diffB="1" specR="0.5" specB="0.5" specG="0.5" ambR="0.8" ambG="0.8" ambB="0.8" texture="snow.jpg"/>
+    </models>
+  </group>
+  <!--Base-->
+  <group>
+    <translate x="0" y="1.5" z="0"/>
+    <scale x="0.3" y="1" z="0.3"/>
+    <models>
+      <model file="Cyl.3d" diffR="0.5" diffG="0.2" diffB="0" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+    </models>
+  </group>
+  <!--Presents-->
+  <group>
+    <translate x="1.5" y="0.5" z="2"/>
+    <rotate angle="-35" x="0" y="1" z="0"/>
+    <models>
+      <model file="Cube.3d" diffR="0.14f" diffG="0.2" diffB="0.9f" specR="0" specB="0" specG="0" ambR="0.14" ambG="0.2" ambB="0.9"/>
+    </models>
+  </group>
+  <group>
+    <translate x="0" y="0.5" z="1.5"/>
+    <rotate angle="15" x="0" y="1" z="0"/>
+    <models>
+      <model file="Cube.3d" diffR="0" diffG="0.9" diffB="0.5" specR="0" specB="0" specG="0" ambR="0.2" ambG="0.9" ambB="0.5"/>
+    </models>
+  </group>
+  <group>
+    <translate x="-1.5" y="0.5" z="2.5"/>
+    <rotate angle="-60" x="0" y="1" z="0"/>
+    <models>
+      <model file="Cube.3d" diffR="0.9f" diffG="0.1" diffB="0.9f" specR="0" specB="0" specG="0" ambR="0.9" ambG="0.1" ambB="0.9"/>
+    </models>
+  </group>
+  <!--Top-->
+  <group>
+    <!--Root Tree-->
+    <translate x="0" y="3" z="0"/>
+    <scale x="2" y="0.7" z="2"/>
+    <models>
+      <model file="Cone.3d" diffR="0.1" diffG="0.8" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+    </models>
+    <!--Addornments-->
+    <group>
+      <scale x="0.5" y="1.42857142857" z="0.5"/>
+      <group>
+        <translate x="0" y="-1.2" z="1.9"/>
+        <scale x="0.05" y="0.05" z="0.05"/>
+        <models>
+          <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+        </models>
+      </group>
+      <group>
+        <translate x="1" y="-1.2" z="-1.7"/>
+        <scale x="0.05" y="0.05" z="0.05"/>
+        <models>
+          <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+        </models>
+      </group>
+      <group>
+        <translate x="-2" y="-1.2" z="-0.4"/>
+        <scale x="0.05" y="0.05" z="0.05"/>
+        <models>
+          <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+        </models>
+      </group>
+    </group>
+    <!--Subtree-->
+    <group>
+      <translate x="0" y="2" z="0"/>
+      <scale x="0.8" y="0.8" z="0.8"/>
+      <models>
+        <model file="Cone.3d" diffR="0.1" diffG="0.8" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+      </models>
+      <group>
+        <!--Addornments-->
+        <scale x="0.5" y="1.42857142857" z="0.5"/>
+        <group>
+          <translate x="0" y="-1.2" z="-2"/>
+          <scale x="0.05" y="0.05" z="0.05"/>
+          <models>
+              <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+          </models>
+        </group>
+        <group>
+          <translate x="-1.8" y="-1.2" z="0.7"/>
+          <scale x="0.05" y="0.05" z="0.05"/>
+          <models>
+            <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+          </models>
+        </group>
+        <group>
+          <translate x="1.8" y="-1.2" z="0.7"/>
+          <scale x="0.05" y="0.05" z="0.05"/>
+          <models>
+            <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+          </models>
+        </group>
+      </group>
+      <!--Subtree-->
+      <group>
+        <translate x="0" y="2" z="0"/>
+        <scale x="0.8" y="0.8" z="0.8"/>
+        <models>
+          <model file="Cone.3d" diffR="0.1" diffG="0.8" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+        </models>
+        <!--Addornments-->
+        <group>
+          <scale x="0.5" y="1.42857142857" z="0.5"/>
+          <group>
+            <translate x="1" y="-1.2" z="1.7"/>
+            <scale x="0.05" y="0.05" z="0.05"/>
+            <models>
+              <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+            </models>
+          </group>
+          <group>
+            <translate x="-2" y="-1.2" z="-0.5"/>
+            <scale x="0.05" y="0.05" z="0.05"/>
+            <models>
+              <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+            </models>
+          </group>
+          <group>
+            <translate x="1.8" y="-1.2" z="-0.7"/>
+            <scale x="0.05" y="0.05" z="0.05"/>
+            <models>
+              <model file="Sphere.3d" diffR="1" diffG="0.1" diffB="0.1" specR="0" specB="0" specG="0" ambR="0.1" ambG="0.1" ambB="0.1"/>
+            </models>
+          </group>
+          <!--Star-->
+          <group>
+            <translate x="0" y="1.2" z="0"/>
+            <scale x="0.12" y="0.12" z="0.12"/>
+            <models>
+              <model file="Sphere.3d" emissR="1" emissG="1" emissB="0"/>
+            </models>
+          </group>
+        </group>
+      </group>
+    </group>
+  </group>
+</scene>

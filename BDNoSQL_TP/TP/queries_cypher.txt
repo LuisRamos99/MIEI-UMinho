@@ -1,0 +1,30 @@
+===QUERY 1: Indique os 5 departamentos que ficam mais caros em termos de salários
+
+match(d:Department)<-[:works_at]-(e:Employees)
+return d.department_name, sum(e.salary)
+order by sum(e.salary) desc
+limit 5;
+
+===QUERY 2: Indique os 10 administradores que gerem o maior número de empregados
+
+match(e1:Employees)<-[:is_managed_by]-(e2:Employees)
+return e1.first_name, e1.last_name, count(e2)
+order by count(e2) desc
+limit 10;
+
+===QUERY 3: Indique qual é o empregado que gere cada departamento
+
+match(d:Department)<-[w:works_at{manages:'yes'}]-(e:Employees) 
+return d, w, e;
+
+===QUERY 4:Indique qual as 3 localizações com mais empregados
+
+match(l:Location)<-[:is_in]-(d:Department)<-[:works_at]-(e:Employees)
+return l.city, l.state_province, count(e)
+order by count(e) desc
+limit 3;
+
+===QUERY 5: Indique qual o empregado que trabalha há mais tempo na empresa
+
+match(e:Employees) return e.first_name, e.last_name, e.hire_date 
+order by e.hire_date asc limit 1;

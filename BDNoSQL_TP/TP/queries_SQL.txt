@@ -1,0 +1,39 @@
+===QUERY 1: Indique os 5 departamentos que ficam mais caros em termos de salários
+
+select DEPARTMENT_NAME, sum(SALARY) as soma 
+from DEPARTMENTS d, EMPLOYEES e
+where d.DEPARTMENT_ID = e.DEPARTMENT_ID
+group by DEPARTMENT_NAME
+order by soma desc
+fetch first 5 rows only;
+
+===QUERY 2: Indique em que país se encontra o departamento ’Shipping’
+
+select COUNTRY_NAME
+from COUNTRIES c, DEPARTMENTS d, LOCATIONS l
+where d.LOCATION_ID = l.LOCATION_ID
+and l.COUNTRY_ID = c.COUNTRY_ID
+and d.DEPARTMENT_NAME = 'Shipping';
+
+===QUERY 3: Indique quais os empregos que existem em cada departamento
+
+select distinct d.DEPARTMENT_NAME, j.JOB_TITLE 
+from JOBS j
+inner join EMPLOYEES e on (j.JOB_ID = e.JOB_ID)
+inner join DEPARTMENTS d on (e.DEPARTMENT_ID = d.DEPARTMENT_ID)
+order by d.DEPARTMENT_NAME;
+
+===QUERY 4: Indique qual é o emprego do empregado com id '101'
+
+select JOB_TITLE 
+from JOBS j, EMPLOYEES e
+where j.JOB_ID = e.JOB_ID
+and e.EMPLOYEE_ID = 101;
+
+===QUERY 5: Indique qual foi a última pessoa a ser contratada, o seu emprego e salário
+
+select e.FIRST_NAME, e.LAST_NAME, j.JOB_TITLE, e.SALARY
+from EMPLOYEES e, JOBS j
+where j.JOB_ID = e.JOB_ID
+order by e.HIRE_DATE desc
+fetch first 1 rows only;

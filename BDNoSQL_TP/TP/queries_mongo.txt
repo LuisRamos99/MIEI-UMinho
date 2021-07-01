@@ -1,0 +1,24 @@
+===QUERY 1: Indique os 5 departamentos que ficam mais caros em termos salariais
+
+db.DEPARTMENTS.aggregate([{$project:{_id:0, name:"$DEPARTMENT_NAME", 
+total:{$sum:"$EMPLOYEES.SALARY"} }},{$sort:{total: -1}}, {$limit: 5}])
+
+===QUERY 2: Indique os departamentos do país "United States of America"
+
+db.DEPARTMENTS.find({"COUNTRY_NAME":"United States of America"},
+{"_id":0, "DEPARTMENT_NAME":1}).pretty()
+
+===QUERY 3: Indique os 3 departamentos com mais empregados
+
+db.DEPARTMENTS.aggregate([{$project:{_id:0, name:"$DEPARTMENT_NAME",
+total:{$size:"$EMPLOYEES"}}},{$sort:{total: -1}}, {$limit: 3}])
+
+===QUERY 4: Indique em que departamento trabalha o empregado com id: 101
+
+db.DEPARTMENTS.find({"EMPLOYEES.EMPLOYEE_ID":110}, {"DEPARTMENT_NAME":1})
+.pretty()
+
+===QUERY 5: Indique o número de empregados total
+
+db.DEPARTMENTS.aggregate([{$group:{_id:'',"Ammount":{$sum:{$size:"$EMPLOYEES"}}}},
+{$project:{_id:0,"total":"$Ammount"}}])
