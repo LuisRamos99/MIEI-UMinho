@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memories",
+  "info": {
+    "name": "Memory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "local": {
+      "type": "string"
+    },
+    "date_of_memory": {
+      "type": "datetime"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "memories",
+      "dominant": true
+    },
+    "utilizador": {
+      "model": "utilizador",
+      "via": "memories"
+    },
+    "people": {
+      "collection": "person",
+      "via": "memories"
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}

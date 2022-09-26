@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "utilizadores",
+  "info": {
+    "name": "utilizador",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "profile_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "utilizador"
+    },
+    "memories": {
+      "via": "utilizador",
+      "collection": "memory"
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "level": {
+      "type": "string",
+      "default": "consumer"
+    }
+  }
+}

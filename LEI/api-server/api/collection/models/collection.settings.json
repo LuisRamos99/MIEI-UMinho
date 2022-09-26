@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "name": "Collection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "public": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "utilizador": {
+      "via": "collections",
+      "model": "utilizador"
+    },
+    "memories": {
+      "via": "collections",
+      "collection": "memory"
+    },
+    "collection_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,305 @@
+@prefix : <http://www.di.uminho.pt/prc2021/PRC2021_Tp#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com> a :Utilizador;
+  :Criou :24c208c0-904a-4523-b8f7-9077586f4014, :8bc7a16a-a3c1-4ae4-9ef3-9aff6b18ca09,
+    :b3805118-bd89-4075-b0a4-e0d379bda532;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :7cae26de-a7b6-48c6-aa3a-353140b1a113,
+    :d641a581-442e-4b99-881f-f6cbf44d8d15, :ac517d3f-1bef-4f6a-ae30-d9a6a178dfab;
+  :email "ric@gmail.com";
+  :nome "Ricardo Cunha";
+  :password "123" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#joao@gmail.com> a :Utilizador;
+  :Criou :51da521d-6ecd-40fa-94c8-eae870f3a0aa, :ac517d3f-1bef-4f6a-ae30-d9a6a178dfab;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :d641a581-442e-4b99-881f-f6cbf44d8d15;
+  :email "joao@gmail.com";
+  :nome "João Cunha";
+  :password "123" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#joana@gmail.com> a :Utilizador;
+  :Criou :a495748b-9737-4b67-b3e1-7089b2905c98, :ad643046-45e9-4d7f-94b8-ba9eefe7f235;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :8bc7a16a-a3c1-4ae4-9ef3-9aff6b18ca09,
+    :b3805118-bd89-4075-b0a4-e0d379bda532;
+  :email "joana@gmail.com";
+  :nome "Joana Ferreira";
+  :password "123" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com> a :Utilizador;
+  :Criou :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :7cae26de-a7b6-48c6-aa3a-353140b1a113,
+    :d641a581-442e-4b99-881f-f6cbf44d8d15, :8c0d51b6-3cca-49f0-b4bb-ee77aa612eae, :48606436-19a4-4948-bba1-1af022d72c65;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :8c0d51b6-3cca-49f0-b4bb-ee77aa612eae;
+  :email "ramos@gmail.com";
+  :nome "Luis Ramos";
+  :password "123" .
+
+:c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joao@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joana@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#cardoso@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com>;
+  :data "2021-06-28 16:24:33";
+  :descricao "1. Coloque num tacho 125g de puré de cerejas e 50g de ginjas inteiras. Misture 65g de açúcar com 2g de pectina e adicione ao tacho. Ligue o lume.  2. Deixe ferver, retire do lume e triture. Leve novamente ao lume até ferver. Deixe arrefecer no frigorífico coberto de película aderente.  3. Na batedeira misture 65g de farinha, 50g de açúcar mascavado escuro, 10g de cacau em pó, 2g de fermento e 2g de bicarbonato de sódio.  4. Numa taça envolva 1 ovo, 50g de leite, 50g de óleo e 30g de mel. Adicione os ingredientes líquidos aos secos e bata um pouco. Acrescente 60g de chocolate negro derretido.  5. Coloque a massa num tabuleiro com papel vegetal e untado com manteiga. Leve ao forno a 180º durante 10 minutos.  6. Em cada copo, faça camadas com uma parte de 150g de natas batidas com 20g de açúcar em pó, ginjas inteiras, bolo arrefecido e a compota de ginja.  7. Finalize com cacau em pó.";
+  :dificuldade "Fácil";
+  :ingrediente "50g Ginjas inteiras em calda", "125g Puré de cerejas", "65g Açúcar",
+    "2g Pectina de fruta", "65g Farinha", "10g Cacau em pó", "50g Açúcar mascavado escuro",
+    "2g Fermento em pó", "2g Bicarbonato de sódio", "30g Mel", "1 Ovo L", "50g Leite meio-gordo",
+    "50g Óleo", "60g Chocolate negro derretido", "Ginjas inteiras em calda q.b. escorridas",
+    "Cacau em pó q.b.";
+  :titulo "Floresta Negra";
+  :tipoCozinha "Belga";
+  :tipoPrato "Doces e Sobremesa";
+  :imgPath "1624893873882-bolo_floresta_negra.jpg" .
+
+:7cae26de-a7b6-48c6-aa3a-353140b1a113 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>;
+  :data "2021-06-28 16:28:35";
+  :descricao "Comece por bater 2 ovos numa taça à qual adiciona 2 colheres de açúcar. Junte um pouquinho de aroma de baunilha. Continue a bater enquanto vai adicionando a farinha. Junte o buttermilk e a manteiga. Continue a bater e junte o fermento em pó.  Aqueça uma frigideira anti-aderente, untada com uma noz de manteiga e comece a fazer as nossas panquecas. Vire as panquecas quando tiverem bolinhas e se soltarem do fundo. Vá repetindo a operação, com alguma paciência, em lume médio ou brando, até se esgotarem os ingredientes. Guarneça a torre de panquecas com morangos, mirtilos, framboesas mel e requeijão. ";
+  :dificuldade "Fácil";
+  :ingrediente "2 ovos", "200 g de farinha de trigo", "2 colheres de chá de fermento em pó",
+    "2 colheres de sopa de açúcar", "40 g de manteiga", "1 colher de chá de aroma de baunilha",
+    "300 g de buttermilk", "Manteiga para untar a frigideira de cada vez que cozinhar uma panqueca",
+    "Sal q.b", "Morangos q.b.", "Mirtilos q.b.", "Framboesas q.b.", "Mel q.b.";
+  :titulo "Panquecas";
+  :tipoCozinha "Americana";
+  :tipoPrato "Doces e Sobremesa";
+  :imgPath "1624894115687-panquecas.png" .
+
+:d641a581-442e-4b99-881f-f6cbf44d8d15 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joao@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com>;
+  :data "2021-06-28 16:31:40";
+  :descricao "Comece por cozer o pato e fazer o caldo, que é um dos elementos-chave do arroz de pato.  Num tacho, deite a água, um punhado de sal, 1 cebola com três cabeças de cravinho espetadas e as ervas aromáticas que preferir (alecrim, tomilho, etc.). Deixe levantar fervura até que o pato esteja bem cozinhado. Retire o pato do caldo e desfie. Coe o caldo e reserve.  Num tacho, comece o refogado: junte a outra cebola picada com o alho, a folha de louro e um bom fio de azeite.  Corte 2 cenouras às rodelas.  Junte algumas rodelas de chouriço e uma folha de louro ao refogado. Corte 3 fatias de toucinho e adicione.  Pique o tomate fresco em pétalas e junte. Refresque com vinho tinto, junte sal e tomilho fresco. Envolva, deixe levantar fervura e adicione o pato. Comece então a incorporar o caldo. Deixe levantar fervura durante 10 minutos, no mínimo. Junte 2 chávenas de arroz vaporizado. Volte a tapar o tacho e conte cerca de 8 minutos. Incorpore os pinhões e transfira o preparado para uma assadeira. Ponha umas rodelas de chouriço por cima e uns raminhos de alecrim. Leve ao forno pré-aquecido, apenas para tostar por cima. Está feito!";
+  :dificuldade "Média";
+  :ingrediente "2 cebolas", "3 cabeças de cravinho", "2 ramos de alecrim", "6 dentes de alho",
+    "1/2 pato", "2 chávenas de arroz vaporizado", "1", "5 l de água", "1 ramo de tomilho fresco",
+    "1 folha de louro", "Azeite", "150 g de pinhão", "1 fatia de toucinho", "1/2 chouriço",
+    "2 tomates pelados e sem sementes", "2 cenouras", "1 cálice de vinho tinto";
+  :titulo "Arroz de pato com pinhões";
+  :tipoCozinha "Portuguesa";
+  :tipoPrato "Arroz";
+  :imgPath "1624894300741-arroz-pato.jpg" .
+
+:51da521d-6ecd-40fa-94c8-eae870f3a0aa a :Publicacao, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joao@gmail.com>;
+  :RelativaA :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb;
+  :data "2021-06-28 16:32:57";
+  :descricao "Um dos bolos mais fáceis de se fazer e super saboroso";
+  :titulo "Que delicia de bolo!" .
+
+:ac517d3f-1bef-4f6a-ae30-d9a6a178dfab a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joao@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>;
+  :data "2021-06-28 16:36:00";
+  :descricao "Arranje e descasque os legumes e corte-os em pedaços grosseiros;  Disponha-os num tabuleiro de ir ao forno e regue com a água e o vinho e o azeite e tempere muito bem, com as ervas aromáticas que preferir; leve ao forno a 180ºC durante uma meia hora;  Noutro tabuleiro, sem mais, disponha as folhas de kale e deixe-as secar, com o calor, para ficarem crocantes;  Quando o tabuleiro de legumes estiver cozido, retire e tranfira para uma tigela ou copo fundo e largo e triture com a varinha mágica; adicione água a ferver ou caldo de carne ou legumes, ao seu gosto, para trabalhar a consistência do creme;  Guarneça com as folhas de kale estaladiças quando servir! ";
+  :dificuldade "Fácil";
+  :ingrediente "Sal q.b.", "1 batata doce cortada aos cubos", "4 dentes de alho", "1 curgete",
+    "6 cenouras", "400gr de abóbora cortada aos cubos ", "1 nabo ", "2 cebolas ", "3 colheres de sopa de vinho branco ",
+    "3 colheres de sopa de água ", "Azeite q.b. ", "Pimenta q.b.", "12 folhas de couve kale";
+  :titulo "Sopa de legumes assados";
+  :tipoCozinha "Espanhola";
+  :tipoPrato "Sopas";
+  :imgPath "1624894560508-7336b2a5-184f-11ea-81a8-b8ca3a6d7f12.png" .
+
+:24c208c0-904a-4523-b8f7-9077586f4014 a :Publicacao, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>;
+  :RelativaA :7cae26de-a7b6-48c6-aa3a-353140b1a113;
+  :data "2021-06-28 16:37:38";
+  :descricao "Ótimo para quem gosta de tomar um bom pequeno almoço!";
+  :titulo "Um bom pequeno almoço" .
+
+:8bc7a16a-a3c1-4ae4-9ef3-9aff6b18ca09 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joana@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>;
+  :data "2021-06-28 16:42:43";
+  :descricao "1. Num tacho com um fio de azeite, refogue 1 cebola cortada em quartos e 3 dentes de alho esmagados com uma folha de louro.  2. Refresque com 100ml de vinho branco, deixe evaporar o álcool e junte ½ curgete descascada e cortada às rodelas, 1 cabeça de pescada, tempere com sal, pimenta.  3. Acrescente 1,5l de água e deixe cozinhar por 20 minutos.  4. Com a ajuda da varinha mágica, triture a sopa e junte-lhe 100g de massa pevide, deixe cozinhar por 10 minutos.  5. Pique dois ovos cozidos.  6. Junte 1 colher de sopa de farinha de araruta ao caldo e mexa até engrossar.  7. Sirva a pescada desfiada, acompanhada de ovo cozido picado e coentros, e regue com o caldo!";
+  :dificuldade "Fácil";
+  :ingrediente "Sal q.b.", "1", "1 folha de louro", "1 cebola cortada em quartos", "3 dentes de alho esmagados",
+    "½ curgete descascada e cortada às rodelas", "1 cabeça de pescada (descongelada)",
+    "5l de água quente", "Azeite q.b.", "100g de massa pevide", "2 ovos cozidos inteiros";
+  :titulo "Sopa de pescada";
+  :tipoCozinha "Portuguesa";
+  :tipoPrato "Sopas";
+  :imgPath "1624894963595-sopa.png" .
+
+:b3805118-bd89-4075-b0a4-e0d379bda532 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ric@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joana@gmail.com>;
+  :data "2021-06-28 16:46:44";
+  :descricao "Massa de pizza:   Comece por dispor a farinha misturada com o sal numa taça funda ou num alguidar.  Dissolva o fermento na água e abra um buraco ao centro da farinha, para verter este preparado. Acrescente o azeite e comece a amassar até que a sua massa fique homogénea e se despegue facilmente das suas mãos. Amasse a massa durante cerca de 10 minutos sem parar.  Polvilhe uma outra taça com farinha e deposite a massa para descansar. Cubra a massa com um pano húmido e deixe-a descansar durante cerca de 2 horas. Quando usar a massa, lembre-se de enfarinhar muito bem a bancada onde a irá estender. Molho de tomate:   Pele o tomate e corte-o em pedaços pequenos.  Descasque os alhos e pique-os.  Deite num tacho o azeite e o alho para alourar. Introduza, depois, o tomate, o sal, o açúcar e o manjericão.  Tape o tacho e deixe cozinhar em lume muito brando durante cerca de 30 minutos, mexendo de vez em quando.  O tomate ficará praticamente desfeito; porém, se quiser, pode triturar tudo com a varinha mágica. Montagem da pizza:   Estenda bem a massa numa superfície enfarinhada, com o rolo da massa.  Cubra com molho de tomate e comece a montar a pizza.  Coloque mozzarella fresca, depois presunto, cogumelos paris laminados, mais um pouco de mozzarella fresca e termine com um ovo ao centro e umas folhas de manjericão.  Leve ao forno pré-aquecido a 200ºC durante cerca de 20 minutos.";
+  :dificuldade "Média";
+  :ingrediente "Sal q.b.", "6 colheres de sopa de azeite", "500 gr de farinha de trigo sem fermento",
+    "25 gr de fermento de padeiro fresco", "250 ml de água morna", "Mozzarella de búfala q.b.",
+    "Presunto q.b", "Cogumelos Paris q.b. ", "1 ovo ", "Manjericão q.b. ";
+  :titulo "Pizza caseira com ovo";
+  :tipoCozinha "Americana";
+  :tipoPrato "Pizza";
+  :imgPath "1624895204763-pizza.jpg" .
+
+:a495748b-9737-4b67-b3e1-7089b2905c98 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joana@gmail.com>;
+  :data "2021-06-28 16:49:43";
+  :descricao "1. Peneire a farinha de trigo com fermento, acrescente sal e abra um espaço para deitar água morna e azeite.  2. Envolva tudo com a ajuda de uma colher, e quando a massa começar a ficar pegajosa amasse com as mãos.  3. Polvilhe com farinha uma folha de papel vegetal e estenda a massa, antes de a levar ao forno.  4. Entretanto, corte 1 queijo mozzarella e 3 figos às rodelas, e queijo azul em pedaços.   5. Retire a massa do forno, cubra com estes ingredientes, acrescente fatias de presunto e termine com um fio de mel.  6. Devolva a pizza ao forno por mais 5 minutos antes de servir com umas folhas de rúcula e muito apetite.";
+  :dificuldade "Média";
+  :ingrediente "250 gr Farinha de Trigo com Fermento", "0.5 chávena Água Morna", "1 colher de sopa Azeite",
+    "1 colher de café Sal", "1 queijo de mozarella de búfala", "100 gr Queijo Azul", "6 fatias presunto ibérico",
+    "3 a 8 figos (a quantidade de figos depende do gosto)", "1 fio de mel";
+  :titulo "Pizza de figos e presunto";
+  :tipoCozinha "Italiana";
+  :tipoPrato "Pizza";
+  :imgPath "1624895383275-pizza2.jpg" .
+
+:ad643046-45e9-4d7f-94b8-ba9eefe7f235 a :Publicacao, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joana@gmail.com>;
+  :RelativaA :b3805118-bd89-4075-b0a4-e0d379bda532;
+  :data "2021-06-28 16:51:06";
+  :descricao "Eu adicionei extras na pizza e ficou ainda melhor! Recomendo!";
+  :titulo "Adicione extras!" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com> a :Utilizador;
+  :Criou :0a30d7f4-b252-44ca-8604-9e6be6a461e8, :3440d1ab-5274-46ef-b078-623b0acebfeb,
+    :42a37a42-7234-441e-96c7-3899e33ad5a6;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :d641a581-442e-4b99-881f-f6cbf44d8d15,
+    :8bc7a16a-a3c1-4ae4-9ef3-9aff6b18ca09, :42a37a42-7234-441e-96c7-3899e33ad5a6;
+  :email "francisca@gmail.com";
+  :nome "Francisca Bonito";
+  :password "123" .
+
+:0a30d7f4-b252-44ca-8604-9e6be6a461e8 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#cardoso@gmail.com>;
+  :data "2021-06-28 16:54:24";
+  :descricao "Comece por picar a cebola com o alho e refogue num fio de azeite generoso. Quando estiverem louros, acrescente a abóbora e a curgete cortadas em cubos, bem como o copo de vinho branco.  Coloque a massa a cozer em abundante água temperada com sal e com um fiozinho de azeite. Quando escorrer a massa, passe-a por água fria e reserve a água da cozedura.  Acrescente ao tacho dos legumes o sumo de limao e a massa ja cozida, a salsa, tempere com sal e pimenta a gosto e regue com um pouco da agua da cozedura da massa.  Envolva com o bechamel.  Adicione o queijo, que pode espalhar apenas por cima da massa ou envolver, e transfira a mistura para um tabuleiro de ir ao forno.  Leve ao forno a gratinar durante cerca de 15 a 20 minutos e sirva. ";
+  :dificuldade "Média";
+  :ingrediente "6 dentes de alho", "Sal q.b", "Azeite", "1 cebola", "250 g de abóbora",
+    "1 curgete pequena", "1 copo de vinho branco", "400 g de massa radiador", "Sumo de 1 limão",
+    "250 g de queijo mozzarella ralado ", "Molho bechamel q.b. ", "Pimenta q.b";
+  :titulo "Macarrão no forno";
+  :tipoCozinha "Italiana";
+  :tipoPrato "Massa";
+  :imgPath "1624895664776-Macarrao_Forno_presunto_queijo_2.jpg" .
+
+:3440d1ab-5274-46ef-b078-623b0acebfeb a :Publicacao, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>;
+  :RelativaA :8bc7a16a-a3c1-4ae4-9ef3-9aff6b18ca09;
+  :data "2021-06-28 16:58:37";
+  :descricao "Nada melhor que uma boa sopa!";
+  :titulo "Sopa maravilhosa" .
+
+:42a37a42-7234-441e-96c7-3899e33ad5a6 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#francisca@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#cardoso@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com>;
+  :data "2021-06-28 18:02:47";
+  :descricao "1. Deite um fio de azeite num tacho e salteie os peitos de frango cortados em tiras. Adicione a cebola e o tomate picados.  2. Tempere com sal, pimenta, orégãos e tomilho. Junte a polpa de tomate e os cogumelos. Envolva, baixe o lume e deixe apurar por 10 minutos.  3. Então retire do lume e adicione o iogurte. Envolva bem de modo a obter uma consistência cremosa.";
+  :dificuldade "Fácil";
+  :ingrediente "Sal q.b", "Pimenta q.b.", "Azeite q.b.", "2 Peitos de Frango", "1 Cebola",
+    "1 Tomate", "100ml de Polpa de Tomate", "150g Cogumelos Frescos Laminados", "1 Iogurte Grego",
+    "Orégãos q.b.", "Tomilho q.b.";
+  :titulo "Stroganoff";
+  :tipoCozinha "Portuguesa";
+  :tipoPrato "Massa";
+  :imgPath "1624899767950-Beef-Stroganoff-square-FS-46.jpg" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com> a :Utilizador;
+  :Criou :ee36d40c-d95c-4896-b6fa-7306c601dcc0, :1633f0b8-0600-45b2-8c62-a7d5ffc4e2f0,
+    :2c6a47a7-bb44-42a3-8b62-1bb652ba8771;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :d641a581-442e-4b99-881f-f6cbf44d8d15,
+    :42a37a42-7234-441e-96c7-3899e33ad5a6, :ee36d40c-d95c-4896-b6fa-7306c601dcc0;
+  :email "gonçalo@gmail.com";
+  :nome "Gonçalo Batista";
+  :password "123" .
+
+:ee36d40c-d95c-4896-b6fa-7306c601dcc0 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com>;
+  :data "2021-06-28 18:06:22";
+  :descricao "Comece por demolhar o bacalhau. Depois de devidamente demolhado, deve lascá-lo e/ou desfiá-lo. Retire pele e espinhas.  Pique a salsa  Pique a cebola com o alho, bem fininho, e leve a refogar numa frigideira larga num belíssimo fio de azeite. Assim que a cebola e os alhos estiverem douradinhos, adicione as lascas do bacalhau, a salsa picada, e tempere com sal e pimenta. Envolva bem e deixe cozinhar.  Separe as claras das gemas de 6 ovos.  Introduza a batata doze previamente frita em palitos, envolva e apague o lume. Neste momento incorpore apenas as gemas dos ovos que vão cozinhar no calor residual.  Sirva com a ajuda de um aro circular e coloque em cima apenas a gema de um ovo, para um extra uau factor. Finalize com salsa picada e uma pitada de pimenta.";
+  :dificuldade "Difícil";
+  :ingrediente "Sal q.b.", "6 dentes de alho", "2 boas postas do lombo de bacalhau da Noruega devidamente demolhado e desfiado/lascado",
+    "1 cebola ", "Azeite ", "7 ovos ", "2 colheres de sopa de leite ", "2 batatas-doces fritas em lascas fininhas";
+  :titulo "Bacalhau à Brás ";
+  :tipoCozinha "Portuguesa";
+  :tipoPrato "Peixe";
+  :imgPath "1624899982936-bacalhau-bras-1.jpg" .
+
+:1633f0b8-0600-45b2-8c62-a7d5ffc4e2f0 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>;
+  :data "2021-06-28 18:09:13";
+  :descricao "Comece por descascar os camarões crus.  Ponha as cascas do camarão a cozer com os talos da salsa e a casca do limão, para fazer o caldo.  Pique os dentes de alho.  Aqueça um fio de azeite e comece a alourar o alho picado. Adicione os camarões com cabeça, sumo de uma lima e uma malagueta laminada. Deixe os camarões alourarem e ganharem sabor. Retire as gambas.  Junte o arroz ao refogado em que salteou os camarões e frite um pouco. Ensope o arroz com o vinho branco e comece a mexer até evaporar o líquido, sempre em lume brando.  Junte a primeira concha do caldo e vá mexendo até que seja necessário juntar mais uma concha, e assim sucessivamente, até se extinguir o caldo.  Apague o lume e incorpore a manteiga.  Emprate o risotto com os camarões salteados em cima. Adicione salsa picada e malagueta finamente laminada. Termine com lascas de parmesão e uma pitada de pimenta moída. ";
+  :dificuldade "Média";
+  :ingrediente "Azeite ", "12 camarões frescos", "2 l de água", "Sumo de 1 lima", "1 limão ",
+    "12 dentes de alho", "2 copos de arroz bomba ", "1 copo de vinho branco ", "2 colheres de sopa de manteiga ",
+    "2 malaguetas ", "1 molho de salsa ", "Sal q.b. ";
+  :titulo "Risoto de Camarão e Lima";
+  :tipoCozinha "Italiana";
+  :tipoPrato "Arroz";
+  :imgPath "1624900153485-risoto-camarao-1200x675.jpg" .
+
+:2c6a47a7-bb44-42a3-8b62-1bb652ba8771 a :Publicacao, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#gonçalo@gmail.com>;
+  :RelativaA :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb;
+  :data "2021-06-28 18:10:15";
+  :descricao "Um bolo maravilhoso!";
+  :titulo "Bom, bom, bom!" .
+
+:8c0d51b6-3cca-49f0-b4bb-ee77aa612eae a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>;
+  :éGostadoPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>, <http://www.di.uminho.pt/prc2021/PRC2021_Tp#cardoso@gmail.com>,
+    <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com>;
+  :data "2021-06-28 18:15:08";
+  :descricao "1. Coloque meia lima cortada em gomos num copo.   2. Junte 1 colher de sopa de açúcar amarelo.   3. Pressione ligeiramente com um pisador.   4. Adicione 60 ml de Licor Beirão e misture.   5. Verta a água aromatizada, junte os cubos de gelo de fruta, mexa ligeiramente e sirva bem frio.";
+  :dificuldade "Fácil";
+  :ingrediente "150 ml Licor Beirão", "1 Lima cortada em gomos", "2 colheres de sopa de açúcar amarelo",
+    "250 ml Água com gás sabor a limão e chá verde", "Mirtilos e morangos em cubo de gelo";
+  :titulo "Cocktail de Licor Beirão";
+  :tipoCozinha "Portuguesa";
+  :tipoPrato "Bebida";
+  :imgPath "1624900508310-02_morangao.jpg" .
+
+:48606436-19a4-4948-bba1-1af022d72c65 a :Receita, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#ramos@gmail.com>;
+  :data "2021-06-28 18:17:12";
+  :descricao "Corte 3 laranjas, com casca, e triture na liquidificadora. Verta para uma taça e adicione 12 ovos inteiros, um a um. Junte o açúcar e bata com uma vara de arames. Incorpore 80gr de manteiga, à temperatura ambiente, e volte a envolver. Junte uma pitada de sal.  Verta o preparado para um tabuleiro rectangular previamente untado com manteiga e forrado com papel vegetal.  Leve ao forno pré-aquecido a 180ºC, durante 8 a 12 minutos.  Estique um pano limpo na bancada e polvilhe com bastante açucar.  Vire a torta para o pano e polvilhe a superfície com mais açúcar.  Enrole a torta ainda bem quente, cuidadosamente, com a ajuda do pano, apertando sempre muito bem.  Deixe repousar durante pelo menos meia hora.  Tire o pano cuidadosamente e está pronta a servir.";
+  :dificuldade "Fácil";
+  :ingrediente "Sal q.b.", "3 laranjas", "12 ovos", "1 colher de sopa de farinha", "450 g de açúcar",
+    "80 g de manteiga";
+  :titulo "Torta de laranja";
+  :tipoCozinha "Portuguesa";
+  :tipoPrato "Doces e Sobremesa";
+  :imgPath "1624900632232-torta-de-laranja-molhadinha.jpg" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#cardoso@gmail.com> a :Utilizador;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :0a30d7f4-b252-44ca-8604-9e6be6a461e8,
+    :42a37a42-7234-441e-96c7-3899e33ad5a6, :8c0d51b6-3cca-49f0-b4bb-ee77aa612eae;
+  :email "cardoso@gmail.com";
+  :nome "João Cardoso";
+  :password "123" .
+
+<http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com> a :Utilizador;
+  :Criou :e7b3b13d-fb04-4e2a-9376-7875392539d0;
+  :GostaDe :c233d5c4-e319-4d4b-8f8c-9c7d4a35afeb, :d641a581-442e-4b99-881f-f6cbf44d8d15,
+    :42a37a42-7234-441e-96c7-3899e33ad5a6, :ee36d40c-d95c-4896-b6fa-7306c601dcc0, :8c0d51b6-3cca-49f0-b4bb-ee77aa612eae;
+  :email "joaquim@gmail.com";
+  :nome "Joaquim Ferreira";
+  :password "123" .
+
+:e7b3b13d-fb04-4e2a-9376-7875392539d0 a :Publicacao, owl:NamedIndividual;
+  :CriadaPor <http://www.di.uminho.pt/prc2021/PRC2021_Tp#joaquim@gmail.com>;
+  :RelativaA :8c0d51b6-3cca-49f0-b4bb-ee77aa612eae;
+  :data "2021-06-28 18:22:46";
+  :descricao "Ótimo para refrescar a alma agora com o calor do verão";
+  :titulo "Bebida de verão" .

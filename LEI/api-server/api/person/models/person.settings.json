@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Person",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "local_of_birth": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "datetime"
+    },
+    "date_of_death": {
+      "type": "datetime"
+    },
+    "memories": {
+      "via": "people",
+      "collection": "memory",
+      "dominant": true
+    }
+  }
+}
