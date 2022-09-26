@@ -20,3 +20,7 @@
  - [Sistemas Operativos](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/SO_TP) <br/>
  - [Sistemas de Representação de Conhecimento e Raciocínio](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/SRCR_TP) <br/>
  - [Segurança de Sistemas Informáticos](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/SSI_TP) <br/>
+ - [Scripting no Processamento da Liguagem Natural](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/SPLN_TP) <br/>
+ - [Processamento e Representação de Conhecimento](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/PRC_TP) <br/>
+ - [Engenharia de Aplicações](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/EA_TP) <br/>
+ - [Laboratório de Engenharia Informática](https://github.com/LuisRamos99/MIEI-UMinho/tree/main/LEI) <br/>
