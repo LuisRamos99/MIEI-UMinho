@@ -1,5 +1,6 @@
 <p align="center">
- <img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" align="center" height="125"> <br/>
+ <img src="https://github.com/LuisRamos99/MIEI-UMinho/assets/48031198/605cf140-fad3-4c47-854b-746313f9dc5f" align="center" height="125"> <br/>
+
 </p>
 <h1 align="center">MIEI</h1>
 <h3 align="center">Universidade do Minho</h3>
